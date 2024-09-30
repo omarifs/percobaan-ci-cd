@@ -1,4 +1,4 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/solveitm/coba
- - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
+ - /usr/bin/rsync -Paz --exclude="percobaan.php" * $DEPLOYPATH --delete
